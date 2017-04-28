@@ -49,4 +49,5 @@
 # **Rotas Flask/ Api- Of Things:**
  ## **POST:**
  - #### Posta documento json com beacons lidos por um scanner:
- - ### **URL = http://ipdamaquina:porta/api-ot/beacons**
+ - ### **URL = http://ipServer:porta/api-ot/beacons**
+ ![alt text](beacons.png)
