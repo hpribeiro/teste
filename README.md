@@ -20,7 +20,7 @@
 - ``` sudo apt-get install -y mongodb-org```
 
 - #### Em seguida crie o arquivo de configuração:
-- > ```sudo nano /etc/systemd/system/mongodb.service```
+- > ```sudo gedit /etc/systemd/system/mongodb.service```
 
 - #### Copie o seguinte conteúdo para o arquivo, salve e feche.
 
@@ -33,8 +33,9 @@
     [Install]  
     WantedBy=multi-user.target
 
+- #### Inicialize o serviço:
 - ``` sudo systemctl start mongodb```
-
+- #### Ativa inicialização automática do serviço:
 - ```sudo systemctl enable mongodb```
 
 
@@ -43,3 +44,9 @@
 - ```	sudo pip install  pymongo```
 - ```	sudo pip install  pprint```
 - ```	sudo pip install -U flask-cors```
+
+
+# **Rotas Flask/ Api- Of Things:**
+ ## **POST:**
+ - #### Posta documento json com beacons lidos por um scanner:
+ - ### **URL = http://ipdamaquina:porta/api-ot/beacons**
