@@ -48,6 +48,28 @@
 
 # **Rotas Flask/ Api- Of Things:**
  ## **POST:**
- - #### Posta documento json com beacons lidos por um scanner:
- - ### **URL = http://ipServer:porta/api-ot/beacons**
- ![alt text](beacons.png)
+ - #### Posta documento JSON com beacons lidos por um scanner:
+ - ### URL = http://ipServer:porta/api-ot/beacons
+ ![alt text](Lista_beacons.png)
+
+
+ ## **GET:**
+- #### Lista todos scanners:
+- ### URL =	http://ipServer:porta/api-ot/scanners
+![alt text](scanners.png)
+
+#### Lista todos beacons:
+- ### URL =	http://ipServer:porta/api-ot/beacons
+![alt text](beacons.png)
+
+## **Buscas:**
+Retorna scanner mais próximo ao beacon, em que o addr ou nome do beacon foi passado por parametro.
+- ### URL = http://ipServer:porta/api-ot/beacons/addr/”addr”
+- ### URL = http://ipServer:porta/api-ot/beacons/name/”nome”
+![alt text](beacons_lista.png)
+
+Retorna beacon mais próximo ao scanner, em que o addr ou nome do scanner foi passado por parametro.
+- ### URL = http://ipServer:porta/api-ot/scanners/addr/”addr”
+![alt text](scanners_addr.png)
+- ### URL = http://ipServer:porta/api-ot/scanners/name/”name”
+![alt text](scanners_name.png)
