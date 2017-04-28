@@ -1,4 +1,3 @@
-
 # **Documentação LabIOT Inatel- Software**
 
 ## Para instalar pacotes para o python será necessário a instalação do pip:
@@ -37,3 +36,10 @@
 - ``` sudo systemctl start mongodb```
 
 - ```sudo systemctl enable mongodb```
+
+
+## Instalação dos módulos Python necessários :
+- ```	sudo pip install  Flask```
+- ```	sudo pip install  pymongo```
+- ```	sudo pip install  pprint```
+- ```	sudo pip install -U flask-cors```
